@@ -77,7 +77,7 @@ const AuthLogin = ({ title, subtitle, subtext }: LoginType) => {
               variant="outlined"
               fullWidth
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
             />
           </Box>
           <Stack justifyContent="space-between" direction="row" alignItems="center" my={2}>
