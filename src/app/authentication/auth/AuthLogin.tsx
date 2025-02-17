@@ -3,7 +3,7 @@ import { Box, Typography, Button, Stack, FormGroup, FormControlLabel, Checkbox }
 import Link from 'next/link';
 import CustomTextField from '@/app/(DashboardLayout)/components/forms/theme-elements/CustomTextField';
 import axios from 'axios'
-import Cookies from 'js-cookie';
+
 interface LoginType {
   title?: string;
   subtitle?: JSX.Element | JSX.Element[];
