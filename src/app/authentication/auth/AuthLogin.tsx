@@ -64,7 +64,7 @@ const AuthLogin = ({ title, subtitle, subtext }: LoginType) => {
               variant="outlined"
               fullWidth
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
             />
           </Box>
           <Box mt="25px">
