@@ -65,7 +65,7 @@ const AuthRegister = ({ title, subtitle, subtext }: RegisterType) => {
             variant="outlined"
             fullWidth
             value={name}
-            onChange={(e) => setName(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
           />
 
           <Typography variant="subtitle1" fontWeight={600} component="label" htmlFor="email" mb="5px" mt="25px">
@@ -76,7 +76,7 @@ const AuthRegister = ({ title, subtitle, subtext }: RegisterType) => {
             variant="outlined"
             fullWidth
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
           />
 
           <Typography variant="subtitle1" fontWeight={600} component="label" htmlFor="password" mb="5px" mt="25px">
@@ -88,7 +88,7 @@ const AuthRegister = ({ title, subtitle, subtext }: RegisterType) => {
             variant="outlined"
             fullWidth
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
           />
         </Stack>
 
